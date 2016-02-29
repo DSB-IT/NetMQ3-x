@@ -206,7 +206,7 @@ namespace NetMQ.zmq
                         Debug.Assert(m_count > newMin - m_min);
                         m_count = (short)(m_count - (newMin - m_min));
 
-                        m_next = realloc(m_next, m_count, true);
+                        m_next = realloc(m_next, m_count, false);
 
                         m_min = newMin;
                     }
@@ -225,7 +225,7 @@ namespace NetMQ.zmq
                         Debug.Assert(newCount != m_count);
                         m_count = newCount;
 
-                        m_next = realloc(m_next, m_count, false);
+                        m_next = realloc(m_next, m_count, true);
                     }
                 }
             }
