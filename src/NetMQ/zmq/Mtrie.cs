@@ -149,7 +149,7 @@ namespace NetMQ.zmq
             //  Remove the subscription from this node.
             if (m_pipes != null && m_pipes.Remove(pipe) && m_pipes.Count == 0)
             {
-                func(null, buff, buffsize, arg);
+                func(pipe, buff, buffsize, arg);
                 m_pipes = null;
             }
 
