@@ -1,3 +1,5 @@
+This fork includes a few recent fixes backported to version 3.3.0.11, which seems to be the latest version released on Nuget working properly on Mono 2.10.2.
+
 NetMQ
 =====
 
